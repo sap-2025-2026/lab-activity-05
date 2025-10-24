@@ -3,7 +3,7 @@ package ttt_game_service.infrastructure;
 import io.vertx.core.Vertx;
 import ttt_game_service.application.GameServiceImpl;
 
-public class TTTServiceMain {
+public class TTTGameServiceMain {
 
 	static final int BACKEND_PORT = 8080;
 
@@ -11,7 +11,7 @@ public class TTTServiceMain {
 		
 		var service = new GameServiceImpl();
 		
-		/* injecting adapters for persistency */
+		/* injecting adapters for persistence */
 		
 		service.bindAccountRepository(new InMemoryAccountRepository());
 		service.bindGameRepository(new InMemoryGameRepository());
