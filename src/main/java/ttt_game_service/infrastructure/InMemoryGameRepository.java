@@ -4,6 +4,7 @@ import java.util.HashMap;
 
 import ddd.Aggregate;
 import ddd.Repository;
+import exagonal.Adapter;
 import exagonal.OutBoundPort;
 import ttt_game_service.application.GameRepository;
 import ttt_game_service.domain.Game;
@@ -13,7 +14,7 @@ import ttt_game_service.domain.Game;
  * Games Repository
  * 
  */
-@OutBoundPort
+@Adapter
 public class InMemoryGameRepository implements GameRepository {
 
 	private HashMap<String, Game> games;

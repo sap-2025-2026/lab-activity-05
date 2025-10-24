@@ -1,4 +1,4 @@
-package ttt_game_service;
+package ttt_game_service_tests;
 
 import org.junit.platform.suite.api.ConfigurationParameter;
 import org.junit.platform.suite.api.IncludeEngines;
@@ -11,7 +11,7 @@ import static io.cucumber.junit.platform.engine.Constants.PLUGIN_PROPERTY_NAME;
 
 @Suite
 @IncludeEngines("cucumber")
-@SelectPackages("ttt_game_service")
+@SelectPackages("ttt_game_service_tests")
 @ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "pretty")
-@ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "ttt_game_service")
+@ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "ttt_game_service_tests")
 public class RunCucumberTest {}

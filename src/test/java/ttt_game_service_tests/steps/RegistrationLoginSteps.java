@@ -1,4 +1,4 @@
-package ttt_game_service.steps;
+package ttt_game_service_tests.steps;
 
 import io.cucumber.java.en.*;
 import ttt_game_service.application.AccountAlreadyPresentException;
